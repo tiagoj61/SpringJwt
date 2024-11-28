@@ -1,4 +1,29 @@
-### 1. Configure the Application
+# JWT User Authentication API
+
+## Description
+**JWT User Authentication API** is a Spring Boot project designed to manage user authentication and authorization using JSON Web Tokens (JWT). It provides endpoints for user registration and login, leveraging Spring Security for secure access control. The API supports role-based access and is structured to ensure scalability and maintainability.
+
+## Table of Contents
+
+- [Description](#description)
+- [How to Use](#how-to-use)
+- [Features](#features)
+- [Dependencies](#dependencies)
+- [Execution](#execution)
+- [API Endpoints](#api-endpoints)
+
+## How to Use
+
+### 1. Clone the Repository
+Clone the repository to your local machine:
+```bash
+git clone <repository-link>
+```
+
+### 2. Open in an IDE
+Open the project in your preferred IDE (e.g., IntelliJ IDEA, Eclipse). Ensure Maven is configured to manage dependencies.
+
+### 3. Configure the Application
 Update the `application.properties` file with your database credentials and other necessary configurations. Example:
 ```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/testedb
@@ -13,13 +38,13 @@ bezkoder.app.jwtSecret=bezKoderSecretKey
 bezkoder.app.jwtExpirationMs=86400000
 ```
 
-### 2. Run the Application
+### 4. Run the Application
 Start the Spring Boot application using your IDE or the terminal:
 ```bash
 mvn spring-boot:run
 ```
 
-### 3. Test the API
+### 5. Test the API
 Use tools like Postman or curl to interact with the API.
 
 ## Features
